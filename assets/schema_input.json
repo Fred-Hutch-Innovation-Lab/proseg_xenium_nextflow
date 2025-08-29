@@ -10,15 +10,17 @@
             "sample": {
                 "type": "string",
                 "pattern": "^\\S+$",
+                "description": "Sample name",
                 "errorMessage": "Sample name must be provided and cannot contain spaces",
                 "meta": ["id"]
             },
             "xenium_outdir": {
                 "type": "string",
-                "format": "file-path",
+                "format": "directory-path",
                 "exists": true,
-                "pattern": ".+",
-                "errorMessage": "Xenium output directory must be provided"
+                "pattern": "^\\S+$",
+                "description": "Xenium output directory",
+                "errorMessage": "Xenium output directory must be provided and cannot contain spaces"
             }
         },
         "required": ["sample", "xenium_outdir"]
