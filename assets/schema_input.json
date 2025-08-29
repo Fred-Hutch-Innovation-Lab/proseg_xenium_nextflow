@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/fred-hutch-innovation-lab/proseg_xenium_nextflow/master/assets/schema_input.json",
+    "title": "fred-hutch-innovation-lab/proseg_xenium_nextflow pipeline - params.input schema",
+    "description": "Schema for the file provided with params.input",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "sample": {
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Sample name must be provided and cannot contain spaces",
+                "meta": ["id"]
+            },
+            "xenium_outdir": {
+                "type": "string",
+                "format": "file-path",
+                "exists": true,
+                "pattern": ".+",
+                "errorMessage": "Xenium output directory must be provided"
+            }
+        },
+        "required": ["sample", "xenium_outdir"]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "input": "assets/samplesheet.csv",
+    "outdir": "test",
+    "publish_dir_mode": "copy",
+    "monochrome_logs": false,
+    "help": false,
+    "help_full": false,
+    "show_hidden": false,
+    "version": false,
+    "trace_report_suffix": "2025-08-29_13-41-31",
+    "validate_params": true,
+    "config_profile_name": "Fred Hutch",
+    "config_profile_description": "Fred Hutch Cancer Center HPC profile",
+    "config_profile_contact": "dgratz@fredhutch.org",
+    "config_profile_url": "https://sciwiki.fredhutch.org/",
+    "max_memory": {
+        "bytes": 751619276800,
+        "giga": 700,
+        "kilo": 734003200,
+        "mega": 716800
+    },
+    "max_cpus": 36,
+    "max_time": {
+        "durationInMillis": 2592000000,
+        "days": 30,
+        "hours": 720,
+        "millis": 2592000000,
+        "minutes": 43200,
+        "seconds": 2592000
+    },
+    "scratchDir": "/home/dgratz/nextflow"
+}
